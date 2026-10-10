@@ -4,13 +4,7 @@
 
 ## System Overview
 
-NALPlan translates a natural-language query into an executable SECONDO moving-object query plan. It addresses five query families: time interval, range, nearest neighbor, trajectory similarity, and join queries.
-
-The pipeline follows three main stages:
-
-1. **Bounded multi-path generation.** Query type, plan models, operators, entities, and demonstrations are assembled into several query paths. The default configuration is 7 paths with 3 candidates per path.
-2. **Constraint-guided self-consistency pruning.** Candidates are checked at executable and semantic layers. The checks cover query type, slot/entity consistency, database-grounded feasibility, operator semantics, and query-type composition.
-3. **Cost-aware selection.** Surviving plans are extended with applicable index rewrites and ranked using an execution-free cost model. A semantic workload cache reuses plans for recurring query patterns.
+Moving objects data are generated at a rapidly increasing scale, and natural language interfaces built on large language models let non-expert users access these data without learning a structured language. Existing interfaces follow the Text-to-SQL paradigm. However, SQL lacks native operators for moving objects, so the translated queries express spatial and temporal relationships in complex and error-prone ways, and the efficiency of the translated queries is delegated to the underlying optimizer. We therefore study the Text-to-Plan problem, which translates a natural language query directly into a query plan composed of moving objects operators and thereby unifies query translation with efficiency control. The problem is challenging because entity alignment, operator selection, and index usage induce an enormous candidate plan space, constructing a cost-optimal plan is NP-hard, and verifying imperative plans through execution is prohibitively expensive. We present \textbf{NALPlan}, to the best of our knowledge the first Text-to-Plan system for moving objects databases. NALPlan constrains generation with query plan models distilled from moving objects query semantics, broadens exploration through multi-path generation, prunes invalid candidates without execution through constraint-guided self-consistency checking, and selects efficient plans with few verification calls through cost-aware selection. Experiments show that NALPlan improves strict execution accuracy by 47.4\% relative to the best baseline and that cost-aware selection further improves correctness-gated plan efficiency by 28.6\%. The framework remains effective with small language models as the backbone.
 
 The public entry point `run_pipeline.py` prints this stage order and the withheld-stage status. It is an interface demonstration, not a complete end-to-end executable release.
 
