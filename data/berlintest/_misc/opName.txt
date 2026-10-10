@@ -1,0 +1,3 @@
+type: (map string (rel (tuple ((Name string) (Algebra string) (Signature text) (Syntax text) (Meaning text) (Example text) (Remark text)))))
+
+(fun (s string) (consume (filter (feed SEC2OPERATORINFO) (fun (tuple1 TUPLE) (contains (attr tuple1 Name) s)))))

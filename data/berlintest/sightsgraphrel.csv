@@ -1,0 +1,75 @@
+Name_s1,GeoData_s1,Id_s1,Name_s2,GeoData_s2,Id_s2
+Jagdschloï¿½ Grunewald,POINT (831.0 6656.0),16,Glockenturm,POINT (-1265.0 11792.0),12
+Glockenturm,POINT (-1265.0 11792.0),12,Jagdschloï¿½ Grunewald,POINT (831.0 6656.0),16
+Rathaus Steglitz,POINT (4833.0 5628.0),31,Jagdschloï¿½ Grunewald,POINT (831.0 6656.0),16
+Jagdschloï¿½ Grunewald,POINT (831.0 6656.0),16,Rathaus Steglitz,POINT (4833.0 5628.0),31
+Wilder Eber,POINT (2720.0 7066.0),40,Jagdschloï¿½ Grunewald,POINT (831.0 6656.0),16
+Jagdschloï¿½ Grunewald,POINT (831.0 6656.0),16,Wilder Eber,POINT (2720.0 7066.0),40
+Steglitzer Kreisel,POINT (4866.0 5483.0),32,Rathaus Steglitz,POINT (4833.0 5628.0),31
+Rathaus Steglitz,POINT (4833.0 5628.0),31,Steglitzer Kreisel,POINT (4866.0 5483.0),32
+Bierpinsel,POINT (5143.0 6093.0),35,Rathaus Steglitz,POINT (4833.0 5628.0),31
+Rathaus Steglitz,POINT (4833.0 5628.0),31,Bierpinsel,POINT (5143.0 6093.0),35
+Wilder Eber,POINT (2720.0 7066.0),40,Rathaus Steglitz,POINT (4833.0 5628.0),31
+Rathaus Steglitz,POINT (4833.0 5628.0),31,Wilder Eber,POINT (2720.0 7066.0),40
+Glockenturm,POINT (-1265.0 11792.0),12,Funkturm,POINT (1877.0 10888.0),11
+Funkturm,POINT (1877.0 10888.0),11,Glockenturm,POINT (-1265.0 11792.0),12
+Wilder Eber,POINT (2720.0 7066.0),40,Rathaus Schmargendorf,POINT (2626.0 7836.0),30
+Rathaus Schmargendorf,POINT (2626.0 7836.0),30,Wilder Eber,POINT (2720.0 7066.0),40
+Wilder Eber,POINT (2720.0 7066.0),40,Bierpinsel,POINT (5143.0 6093.0),35
+Bierpinsel,POINT (5143.0 6093.0),35,Wilder Eber,POINT (2720.0 7066.0),40
+Wilder Eber,POINT (2720.0 7066.0),40,Forum Steglitz,POINT (5334.0 6537.0),33
+Forum Steglitz,POINT (5334.0 6537.0),33,Wilder Eber,POINT (2720.0 7066.0),40
+Bierpinsel,POINT (5143.0 6093.0),35,Forum Steglitz,POINT (5334.0 6537.0),33
+Forum Steglitz,POINT (5334.0 6537.0),33,Bierpinsel,POINT (5143.0 6093.0),35
+Funkturm,POINT (1877.0 10888.0),11,Kudamm-Karree,POINT (4970.0 10554.0),10
+Kudamm-Karree,POINT (4970.0 10554.0),10,Funkturm,POINT (1877.0 10888.0),11
+St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17,Funkturm,POINT (1877.0 10888.0),11
+Funkturm,POINT (1877.0 10888.0),11,St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17
+Rathaus Schmargendorf,POINT (2626.0 7836.0),30,Funkturm,POINT (1877.0 10888.0),11
+Funkturm,POINT (1877.0 10888.0),11,Rathaus Schmargendorf,POINT (2626.0 7836.0),30
+Rathaus Schmargendorf,POINT (2626.0 7836.0),30,St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17
+St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17,Rathaus Schmargendorf,POINT (2626.0 7836.0),30
+Rathaus Friedenau,POINT (5877.0 7360.0),34,Forum Steglitz,POINT (5334.0 6537.0),33
+Forum Steglitz,POINT (5334.0 6537.0),33,Rathaus Friedenau,POINT (5877.0 7360.0),34
+St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17,Kudamm-Karree,POINT (4970.0 10554.0),10
+Kudamm-Karree,POINT (4970.0 10554.0),10,St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17
+Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25,Kudamm-Karree,POINT (4970.0 10554.0),10
+Kudamm-Karree,POINT (4970.0 10554.0),10,Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25
+Kudamm-Karree,POINT (4970.0 10554.0),10,Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9
+Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9,Kudamm-Karree,POINT (4970.0 10554.0),10
+Kudamm-Karree,POINT (4970.0 10554.0),10,Ludwig-Erhard-Haus,POINT (5301.0 11099.0),8
+Ludwig-Erhard-Haus,POINT (5301.0 11099.0),8,Kudamm-Karree,POINT (4970.0 10554.0),10
+Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25,St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17
+St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17,Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25
+Rathaus Friedenau,POINT (5877.0 7360.0),34,St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17
+St.-Gertrauden-Krankenhaus,POINT (4574.0 8247.0),17,Rathaus Friedenau,POINT (5877.0 7360.0),34
+Rathaus Friedenau,POINT (5877.0 7360.0),34,Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25
+Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25,Rathaus Friedenau,POINT (5877.0 7360.0),34
+Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25,Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9
+Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9,Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25
+Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25,Siegessï¿½ule,POINT (6749.0 12015.0),3
+Siegessï¿½ule,POINT (6749.0 12015.0),3,Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25
+Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25,Ruine des Anhalter Bahnhofs,POINT (8927.0 10842.0),24
+Ruine des Anhalter Bahnhofs,POINT (8927.0 10842.0),24,Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25
+Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25,Schinkeldenkmal,POINT (8911.0 9073.0),6
+Schinkeldenkmal,POINT (8911.0 9073.0),6,Gaswerk Schï¿½neberg,POINT (7254.0 8407.0),25
+Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9,Amerika-Haus,POINT (5436.0 11107.0),7
+Amerika-Haus,POINT (5436.0 11107.0),7,Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9
+Kudamm-Karree,POINT (4970.0 10554.0),10,Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9
+Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9,Kudamm-Karree,POINT (4970.0 10554.0),10
+Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9,Schinkeldenkmal,POINT (8911.0 9073.0),6
+Schinkeldenkmal,POINT (8911.0 9073.0),6,Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9
+Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9,Siegessï¿½ule,POINT (6749.0 12015.0),3
+Siegessï¿½ule,POINT (6749.0 12015.0),3,Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9
+Ruine des Anhalter Bahnhofs,POINT (8927.0 10842.0),24,Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9
+Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9,Ruine des Anhalter Bahnhofs,POINT (8927.0 10842.0),24
+Ludwig-Erhard-Haus,POINT (5301.0 11099.0),8,Amerika-Haus,POINT (5436.0 11107.0),7
+Amerika-Haus,POINT (5436.0 11107.0),7,Ludwig-Erhard-Haus,POINT (5301.0 11099.0),8
+Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9,Ludwig-Erhard-Haus,POINT (5301.0 11099.0),8
+Ludwig-Erhard-Haus,POINT (5301.0 11099.0),8,Kaiser-Wilhelm-Gedï¿½chtniskirche,POINT (5754.0 10934.0),9
+Funkturm,POINT (1877.0 10888.0),11,Ludwig-Erhard-Haus,POINT (5301.0 11099.0),8
+Ludwig-Erhard-Haus,POINT (5301.0 11099.0),8,Funkturm,POINT (1877.0 10888.0),11
+Siegessï¿½ule,POINT (6749.0 12015.0),3,Brandenburger Tor,POINT (8593.0 12243.0),1
+Brandenburger Tor,POINT (8593.0 12243.0),1,Siegessï¿½ule,POINT (6749.0 12015.0),3
+Ruine des Anhalter Bahnhofs,POINT (8927.0 10842.0),24,Siegessï¿½ule,POINT (6749.0 12015.0),3
+Siegessï¿½ule,POINT (6749.0 12015.0),3,Ruine des Anhalter Bahnhofs,POINT (8927.0 10842.0),24

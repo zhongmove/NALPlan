@@ -1,0 +1,3 @@
+type: (map int (rel (tuple ((Id int) (Line int) (Up bool) (UTrip upoint) (No int)))))
+
+(fun (n int) (consume (windowintersects unitTrains_UTrip UnitTrains (bbox (extract (filter (feed UnitTrains) (fun (tuple1 TUPLE) (= (attr tuple1 No) n))) UTrip)))))

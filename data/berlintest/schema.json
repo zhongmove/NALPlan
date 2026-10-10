@@ -1,0 +1,1191 @@
+{
+  "db_id": "berlintest",
+  "description": "Berlin moving-objects test database (BerlinMOD): public transport network, city geometry and train trajectories. All objects exported.",
+  "format": "CSV (UTF-8); spatial attributes serialised as OGC WKT; moving points expanded into temporal-unit CSV files",
+  "num_tables": 82,
+  "tables": [
+    {
+      "table": "BGrenzenLine",
+      "kind": "geometry",
+      "secondo_type": "line",
+      "files": [
+        "BGrenzenLine.csv"
+      ]
+    },
+    {
+      "table": "Faehren",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Ort",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 23,
+      "files": [
+        "Faehren.csv"
+      ]
+    },
+    {
+      "table": "Flaechen",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "region"
+        }
+      ],
+      "num_rows": 144,
+      "files": [
+        "Flaechen.csv"
+      ]
+    },
+    {
+      "table": "Kinos",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Strasse",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 83,
+      "files": [
+        "Kinos.csv"
+      ]
+    },
+    {
+      "table": "Kneipen",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Strasse",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 284,
+      "files": [
+        "Kneipen.csv"
+      ]
+    },
+    {
+      "table": "Landstrassen",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 1139,
+      "files": [
+        "Landstrassen.csv"
+      ]
+    },
+    {
+      "table": "Landstrassen2",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 552,
+      "files": [
+        "Landstrassen2.csv"
+      ]
+    },
+    {
+      "table": "Orte",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Kennzeichen",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Ort",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Vorwahl",
+          "secondo_type": "string"
+        },
+        {
+          "name": "BevT",
+          "secondo_type": "int"
+        }
+      ],
+      "num_rows": 506,
+      "files": [
+        "Orte.csv"
+      ]
+    },
+    {
+      "table": "Orte2",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Groesse",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 768,
+      "files": [
+        "Orte2.csv"
+      ]
+    },
+    {
+      "table": "OrteCity",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Groesse",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 8,
+      "files": [
+        "OrteCity.csv"
+      ]
+    },
+    {
+      "table": "PLZBoundaries",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "PLZ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 27,
+      "files": [
+        "PLZBoundaries.csv"
+      ]
+    },
+    {
+      "table": "Plaetze",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 201,
+      "files": [
+        "Plaetze.csv"
+      ]
+    },
+    {
+      "table": "PotsdamLine",
+      "kind": "geometry",
+      "secondo_type": "line",
+      "files": [
+        "PotsdamLine.csv"
+      ]
+    },
+    {
+      "table": "RBahn",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 200,
+      "files": [
+        "RBahn.csv"
+      ]
+    },
+    {
+      "table": "RBahnhof",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 351,
+      "files": [
+        "RBahnhof.csv"
+      ]
+    },
+    {
+      "table": "Restaurants",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Art",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Strasse",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 752,
+      "files": [
+        "Restaurants.csv"
+      ]
+    },
+    {
+      "table": "SBahn",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 67,
+      "files": [
+        "SBahn.csv"
+      ]
+    },
+    {
+      "table": "SBahnhof",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 167,
+      "files": [
+        "SBahnhof.csv"
+      ]
+    },
+    {
+      "table": "SEC_DERIVED_OBJ",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Value",
+          "secondo_type": "text"
+        },
+        {
+          "name": "UsedObjs",
+          "secondo_type": "text"
+        }
+      ],
+      "num_rows": 19,
+      "files": [
+        "SEC_DERIVED_OBJ.csv"
+      ]
+    },
+    {
+      "table": "Sehenswuerdaspoints",
+      "kind": "geometry",
+      "secondo_type": "points",
+      "files": [
+        "Sehenswuerdaspoints.csv"
+      ]
+    },
+    {
+      "table": "Sehenswuerdpoi",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 68,
+      "files": [
+        "Sehenswuerdpoi.csv"
+      ]
+    },
+    {
+      "table": "Sehenswuerdpoi2",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 198,
+      "files": [
+        "Sehenswuerdpoi2.csv"
+      ]
+    },
+    {
+      "table": "Sehenswuerdreg",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "region"
+        }
+      ],
+      "num_rows": 130,
+      "files": [
+        "Sehenswuerdreg.csv"
+      ]
+    },
+    {
+      "table": "Staedte",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "SName",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Bev",
+          "secondo_type": "int"
+        },
+        {
+          "name": "PLZ",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Vorwahl",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Kennzeichen",
+          "secondo_type": "string"
+        }
+      ],
+      "num_rows": 58,
+      "files": [
+        "Staedte.csv"
+      ]
+    },
+    {
+      "table": "UBahn",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 24,
+      "files": [
+        "UBahn.csv"
+      ]
+    },
+    {
+      "table": "UBahnhof",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 173,
+      "files": [
+        "UBahnhof.csv"
+      ]
+    },
+    {
+      "table": "WFlaechen",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "region"
+        }
+      ],
+      "num_rows": 85,
+      "files": [
+        "WFlaechen.csv"
+      ]
+    },
+    {
+      "table": "WStrassen",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 21,
+      "files": [
+        "WStrassen.csv"
+      ]
+    },
+    {
+      "table": "Wasserumland2",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 310,
+      "files": [
+        "Wasserumland2.csv"
+      ]
+    },
+    {
+      "table": "Workers",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Host",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Port",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Config",
+          "secondo_type": "string"
+        },
+        {
+          "name": "MessageServerPort",
+          "secondo_type": "int"
+        }
+      ],
+      "num_rows": 3,
+      "files": [
+        "Workers.csv"
+      ]
+    },
+    {
+      "table": "alexanderplatz",
+      "kind": "geometry",
+      "secondo_type": "point",
+      "files": [
+        "alexanderplatz.csv"
+      ]
+    },
+    {
+      "table": "box1000",
+      "kind": "other",
+      "secondo_type": "rect3",
+      "files": [
+        "_misc/box1000.txt"
+      ]
+    },
+    {
+      "table": "eight",
+      "kind": "scalar",
+      "secondo_type": "instant",
+      "files": [
+        "eight.csv"
+      ]
+    },
+    {
+      "table": "hoehe",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Hoehe",
+          "secondo_type": "real"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 827,
+      "files": [
+        "hoehe.csv"
+      ]
+    },
+    {
+      "table": "intset_a10",
+      "kind": "array",
+      "secondo_type": "(array int)",
+      "files": [
+        "intset_a10.csv"
+      ]
+    },
+    {
+      "table": "koepenick",
+      "kind": "geometry",
+      "secondo_type": "region",
+      "files": [
+        "koepenick.csv"
+      ]
+    },
+    {
+      "table": "mehringdamm",
+      "kind": "geometry",
+      "secondo_type": "point",
+      "files": [
+        "mehringdamm.csv"
+      ]
+    },
+    {
+      "table": "mrain",
+      "kind": "other",
+      "secondo_type": "mregion",
+      "files": [
+        "_misc/mrain.txt"
+      ]
+    },
+    {
+      "table": "mrain2",
+      "kind": "other",
+      "secondo_type": "mregion",
+      "files": [
+        "_misc/mrain2.txt"
+      ]
+    },
+    {
+      "table": "mrain3",
+      "kind": "other",
+      "secondo_type": "mregion",
+      "files": [
+        "_misc/mrain3.txt"
+      ]
+    },
+    {
+      "table": "mrainline",
+      "kind": "geometry",
+      "secondo_type": "line",
+      "files": [
+        "mrainline.csv"
+      ]
+    },
+    {
+      "table": "mreal5000",
+      "kind": "mreal",
+      "num_units": 1,
+      "files": [
+        "mreal5000.csv"
+      ]
+    },
+    {
+      "table": "msnow",
+      "kind": "other",
+      "secondo_type": "mregion",
+      "files": [
+        "_misc/msnow.txt"
+      ]
+    },
+    {
+      "table": "neighbours",
+      "kind": "other",
+      "secondo_type": "(map int (rel (tuple ((Id int) (Line int) (Up bool) (UTrip upoint) (No int)))))",
+      "files": [
+        "_misc/neighbours.txt"
+      ]
+    },
+    {
+      "table": "nine",
+      "kind": "scalar",
+      "secondo_type": "instant",
+      "files": [
+        "nine.csv"
+      ]
+    },
+    {
+      "table": "noAtCenter",
+      "kind": "mint",
+      "num_units": 21,
+      "files": [
+        "noAtCenter.csv"
+      ]
+    },
+    {
+      "table": "noAtTiergarten",
+      "kind": "mint",
+      "num_units": 3,
+      "files": [
+        "noAtTiergarten.csv"
+      ]
+    },
+    {
+      "table": "opName",
+      "kind": "other",
+      "secondo_type": "(map string (rel (tuple ((Name string) (Algebra string) (Signature text) (Syntax text) (Meaning text) (Example text) (Remark text)))))",
+      "files": [
+        "_misc/opName.txt"
+      ]
+    },
+    {
+      "table": "opType",
+      "kind": "other",
+      "secondo_type": "(map string (rel (tuple ((Name string) (Algebra string) (Signature text) (Syntax text) (Meaning text) (Example text) (Remark text)))))",
+      "files": [
+        "_misc/opType.txt"
+      ]
+    },
+    {
+      "table": "ospresult",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Id_s1",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Id_s2",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Name_s1",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Name_s2",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData_s1",
+          "secondo_type": "point"
+        },
+        {
+          "name": "GeoData_s2",
+          "secondo_type": "point"
+        },
+        {
+          "name": "SeqNo",
+          "secondo_type": "int"
+        }
+      ],
+      "num_rows": 1,
+      "files": [
+        "ospresult.csv"
+      ]
+    },
+    {
+      "table": "otestrel",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Id_s1",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Id_s2",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Name_s1",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Name_s2",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData_s1",
+          "secondo_type": "point"
+        },
+        {
+          "name": "GeoData_s2",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 74,
+      "files": [
+        "otestrel.csv"
+      ]
+    },
+    {
+      "table": "pictures",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Id",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Pic",
+          "secondo_type": "picture"
+        }
+      ],
+      "num_rows": 10,
+      "files": [
+        "pictures.csv"
+      ]
+    },
+    {
+      "table": "plz",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "PLZ",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Ort",
+          "secondo_type": "string"
+        }
+      ],
+      "num_rows": 41267,
+      "files": [
+        "plz.csv"
+      ]
+    },
+    {
+      "table": "realset_a10",
+      "kind": "array",
+      "secondo_type": "(array real)",
+      "files": [
+        "realset_a10.csv"
+      ]
+    },
+    {
+      "table": "sightsedge1",
+      "kind": "other",
+      "secondo_type": "edge",
+      "files": [
+        "_misc/sightsedge1.txt"
+      ]
+    },
+    {
+      "table": "sightsedge2",
+      "kind": "other",
+      "secondo_type": "edge",
+      "files": [
+        "_misc/sightsedge2.txt"
+      ]
+    },
+    {
+      "table": "sightsgraph1",
+      "kind": "other",
+      "secondo_type": "graph",
+      "files": [
+        "_misc/sightsgraph1.txt"
+      ]
+    },
+    {
+      "table": "sightsgraph2",
+      "kind": "other",
+      "secondo_type": "graph",
+      "files": [
+        "_misc/sightsgraph2.txt"
+      ]
+    },
+    {
+      "table": "sightsgraphrel",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name_s1",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData_s1",
+          "secondo_type": "point"
+        },
+        {
+          "name": "Id_s1",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Name_s2",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData_s2",
+          "secondo_type": "point"
+        },
+        {
+          "name": "Id_s2",
+          "secondo_type": "int"
+        }
+      ],
+      "num_rows": 74,
+      "files": [
+        "sightsgraphrel.csv"
+      ]
+    },
+    {
+      "table": "six30",
+      "kind": "scalar",
+      "secondo_type": "instant",
+      "files": [
+        "six30.csv"
+      ]
+    },
+    {
+      "table": "strassen",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Typ",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "line"
+        }
+      ],
+      "num_rows": 3212,
+      "files": [
+        "strassen.csv"
+      ]
+    },
+    {
+      "table": "stringset_a4",
+      "kind": "array",
+      "secondo_type": "(array string)",
+      "files": [
+        "stringset_a4.csv"
+      ]
+    },
+    {
+      "table": "ten",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "No",
+          "secondo_type": "int"
+        }
+      ],
+      "num_rows": 10,
+      "files": [
+        "ten.csv"
+      ]
+    },
+    {
+      "table": "thecenter",
+      "kind": "geometry",
+      "secondo_type": "region",
+      "files": [
+        "thecenter.csv"
+      ]
+    },
+    {
+      "table": "thousand",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "No",
+          "secondo_type": "int"
+        }
+      ],
+      "num_rows": 1000,
+      "files": [
+        "thousand.csv"
+      ]
+    },
+    {
+      "table": "tiergarten",
+      "kind": "geometry",
+      "secondo_type": "region",
+      "files": [
+        "tiergarten.csv"
+      ]
+    },
+    {
+      "table": "train1",
+      "kind": "mpoint",
+      "secondo_type": "mpoint",
+      "num_units": 113,
+      "files": [
+        "train1.csv"
+      ]
+    },
+    {
+      "table": "train1first",
+      "kind": "mpoint",
+      "secondo_type": "mpoint",
+      "num_units": 113,
+      "files": [
+        "train1first.csv"
+      ]
+    },
+    {
+      "table": "train1second",
+      "kind": "mpoint",
+      "secondo_type": "mpoint",
+      "num_units": 113,
+      "files": [
+        "train1second.csv"
+      ]
+    },
+    {
+      "table": "train5",
+      "kind": "mpoint",
+      "secondo_type": "mpoint",
+      "num_units": 72,
+      "files": [
+        "train5.csv"
+      ]
+    },
+    {
+      "table": "train6",
+      "kind": "mpoint",
+      "secondo_type": "mpoint",
+      "num_units": 86,
+      "files": [
+        "train6.csv"
+      ]
+    },
+    {
+      "table": "train7",
+      "kind": "mpoint",
+      "secondo_type": "mpoint",
+      "num_units": 185,
+      "files": [
+        "train7.csv"
+      ]
+    },
+    {
+      "table": "train7down",
+      "kind": "mpoint",
+      "secondo_type": "mpoint",
+      "num_units": 185,
+      "files": [
+        "train7down.csv"
+      ]
+    },
+    {
+      "table": "train7downsights",
+      "kind": "mstring",
+      "num_units": 185,
+      "files": [
+        "train7downsights.csv"
+      ]
+    },
+    {
+      "table": "train7nextstat",
+      "kind": "mstring",
+      "num_units": 184,
+      "files": [
+        "train7nextstat.csv"
+      ]
+    },
+    {
+      "table": "train7sections",
+      "kind": "geometry",
+      "secondo_type": "line",
+      "files": [
+        "train7sections.csv"
+      ]
+    },
+    {
+      "table": "train7stations",
+      "kind": "geometry",
+      "secondo_type": "points",
+      "files": [
+        "train7stations.csv"
+      ]
+    },
+    {
+      "table": "train7up",
+      "kind": "mpoint",
+      "secondo_type": "mpoint",
+      "num_units": 185,
+      "files": [
+        "train7up.csv"
+      ]
+    },
+    {
+      "table": "train7upsights",
+      "kind": "mstring",
+      "num_units": 185,
+      "files": [
+        "train7upsights.csv"
+      ]
+    },
+    {
+      "table": "westhafen",
+      "kind": "geometry",
+      "secondo_type": "region",
+      "files": [
+        "westhafen.csv"
+      ]
+    },
+    {
+      "table": "zoogarten",
+      "kind": "geometry",
+      "secondo_type": "region",
+      "files": [
+        "zoogarten.csv"
+      ]
+    },
+    {
+      "table": "Trains",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Id",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Line",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Up",
+          "secondo_type": "bool"
+        },
+        {
+          "name": "Trip",
+          "secondo_type": "mpoint"
+        }
+      ],
+      "num_rows": 562,
+      "files": [
+        "Trains.csv",
+        "Trains__Trip_units.csv"
+      ]
+    }
+  ]
+}

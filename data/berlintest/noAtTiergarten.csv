@@ -1,0 +1,4 @@
+unit_index,t_start,t_end,left_closed,right_closed,value
+0,begin of time,2003-11-20-08:29:23.201,TRUE,FALSE,0
+1,2003-11-20-08:29:23.201,2003-11-20-08:30:01.858,TRUE,TRUE,1
+2,2003-11-20-08:30:01.858,end of time,FALSE,TRUE,0

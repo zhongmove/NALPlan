@@ -1,0 +1,4 @@
+Host,Port,Config,MessageServerPort
+localhost,1301,SecondoConfig.ini,1401
+localhost,1302,SecondoConfig.ini,1402
+localhost,1303,SecondoConfig.ini,1403

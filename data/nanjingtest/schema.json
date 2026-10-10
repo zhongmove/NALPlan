@@ -1,0 +1,319 @@
+{
+  "db_id": "nanjingtest",
+  "description": "Nanjing geospatial dataset: city / district / university boundaries, road network and points of interest. Trajectory data excluded.",
+  "format": "CSV (UTF-8); spatial attributes serialised as OGC WKT; moving points expanded into temporal-unit CSV files",
+  "num_tables": 11,
+  "tables": [
+    {
+      "table": "JiangsuCities",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Id",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Pid",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Population",
+          "secondo_type": "real"
+        },
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Center",
+          "secondo_type": "point"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "region"
+        }
+      ],
+      "num_rows": 13,
+      "files": [
+        "JiangsuCities.csv"
+      ],
+      "description": "Boundaries and centres of Jiangsu province cities (incl. Nanjing)"
+    },
+    {
+      "table": "NJDistricts",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "region"
+        }
+      ],
+      "num_rows": 11,
+      "files": [
+        "NJDistricts.csv"
+      ],
+      "description": "Administrative district boundaries of Nanjing"
+    },
+    {
+      "table": "Roads",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "sline"
+        },
+        {
+          "name": "CurvLength",
+          "secondo_type": "real"
+        },
+        {
+          "name": "Rid",
+          "secondo_type": "int"
+        }
+      ],
+      "num_rows": 17455,
+      "files": [
+        "Roads.csv"
+      ],
+      "description": "Full Nanjing road network (simple lines)"
+    },
+    {
+      "table": "MajorRoads",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "sline"
+        }
+      ],
+      "num_rows": 886,
+      "files": [
+        "MajorRoads.csv"
+      ],
+      "description": "Major named roads of Nanjing"
+    },
+    {
+      "table": "RoadSections",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Rid",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Meas1",
+          "secondo_type": "real"
+        },
+        {
+          "name": "Meas2",
+          "secondo_type": "real"
+        },
+        {
+          "name": "Dual",
+          "secondo_type": "bool"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "sline"
+        },
+        {
+          "name": "CurveStartsSmaller",
+          "secondo_type": "bool"
+        },
+        {
+          "name": "Rrc",
+          "secondo_type": "tid"
+        },
+        {
+          "name": "Sid",
+          "secondo_type": "int"
+        }
+      ],
+      "num_rows": 19046,
+      "files": [
+        "RoadSections.csv"
+      ],
+      "description": "Road-network sections (network edges)"
+    },
+    {
+      "table": "RoadJunctions",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "R1id",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Meas1",
+          "secondo_type": "real"
+        },
+        {
+          "name": "R2id",
+          "secondo_type": "int"
+        },
+        {
+          "name": "Meas2",
+          "secondo_type": "real"
+        },
+        {
+          "name": "Cc",
+          "secondo_type": "int"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        },
+        {
+          "name": "R1rc",
+          "secondo_type": "tid"
+        },
+        {
+          "name": "R2rc",
+          "secondo_type": "tid"
+        },
+        {
+          "name": "Sauprc",
+          "secondo_type": "tid"
+        },
+        {
+          "name": "Sadownrc",
+          "secondo_type": "tid"
+        },
+        {
+          "name": "Sbuprc",
+          "secondo_type": "tid"
+        },
+        {
+          "name": "Sbdownrc",
+          "secondo_type": "tid"
+        }
+      ],
+      "num_rows": 89475,
+      "files": [
+        "RoadJunctions.csv"
+      ],
+      "description": "Road-network junctions (network nodes)"
+    },
+    {
+      "table": "NJUniversities",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Name_en",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Geometry",
+          "secondo_type": "region"
+        }
+      ],
+      "num_rows": 89,
+      "files": [
+        "NJUniversities.csv"
+      ],
+      "description": "University campus boundaries in Nanjing"
+    },
+    {
+      "table": "WHUniversities",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Name_en",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Geometry",
+          "secondo_type": "region"
+        }
+      ],
+      "num_rows": 89,
+      "files": [
+        "WHUniversities.csv"
+      ],
+      "description": "University campus boundaries in Wuhan"
+    },
+    {
+      "table": "POI",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Long",
+          "secondo_type": "real"
+        },
+        {
+          "name": "Lat",
+          "secondo_type": "real"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 1000,
+      "files": [
+        "POI.csv"
+      ],
+      "description": "Points of interest in Nanjing"
+    },
+    {
+      "table": "Parks",
+      "kind": "relation",
+      "columns": [
+        {
+          "name": "Name",
+          "secondo_type": "string"
+        },
+        {
+          "name": "Long",
+          "secondo_type": "real"
+        },
+        {
+          "name": "Lat",
+          "secondo_type": "real"
+        },
+        {
+          "name": "GeoData",
+          "secondo_type": "point"
+        }
+      ],
+      "num_rows": 89,
+      "files": [
+        "Parks.csv"
+      ],
+      "description": "Parks in Nanjing"
+    },
+    {
+      "table": "GaochunOldStreet",
+      "kind": "geometry",
+      "secondo_type": "point",
+      "files": [
+        "GaochunOldStreet.csv"
+      ],
+      "description": "Gaochun Old Street location (point)"
+    }
+  ]
+}
