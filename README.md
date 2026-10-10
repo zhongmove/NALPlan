@@ -2,8 +2,6 @@
 
 **LLM-Based Multi-Path Query Plan Synthesis for Natural Language Queries of Spatio-Temporal Databases**
 
-The release is intentionally reproducibility-oriented but incomplete: the core implementation bodies and several learned/curated artifacts are withheld until paper acceptance. Interfaces, module organization, public data, and representative benchmark examples are provided so that the system architecture and experimental setting can be inspected without exposing the pending implementation.
-
 ## System Overview
 
 NALPlan translates a natural-language query into an executable SECONDO moving-object query plan. It addresses five query families: time interval, range, nearest neighbor, trajectory similarity, and join queries.
@@ -136,6 +134,6 @@ The command loads a representative query and reports the intended NALPlan stage 
 
 ## Reproducibility and License
 
-The paper reports experiments using Ubuntu, Python 3.10, SECONDO, and an LLM endpoint. Exact model, database, prompt, cache, and experiment details will accompany the complete artifact release after acceptance.
+The paper reports experiments using Ubuntu, Python 3.10, SECONDO, and an LLM endpoint. Exact model, database, prompt, cache, and experiment details will accompany the complete artifact release after acceptance. The core implementation bodies and several learned/curated artifacts are withheld until paper acceptance. Interfaces, module organization, public data, and representative benchmark examples are provided so that the system architecture and experimental setting can be inspected without exposing the pending implementation.
 
 No license has been selected for this staged release. Add the project license and the final citation metadata before publishing the GitHub repository.
