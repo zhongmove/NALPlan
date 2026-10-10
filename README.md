@@ -2,9 +2,6 @@
 
 **LLM-Based Multi-Path Query Plan Synthesis for Natural Language Queries of Spatio-Temporal Databases**
 
-This repository is the staged public release accompanying the paper manuscript
-`LLM_Based_Multi_Path_Generation_and_Optimization_of_Query_Plans_for_Spatio_Temporal_Databases_Natural_Language_Queries_2026_10_9.pdf`.
-
 The release is intentionally reproducibility-oriented but incomplete: the core implementation bodies and several learned/curated artifacts are withheld until paper acceptance. Interfaces, module organization, public data, and representative benchmark examples are provided so that the system architecture and experimental setting can be inspected without exposing the pending implementation.
 
 ## System Overview
