@@ -22,8 +22,6 @@ The public entry point `run_pipeline.py` prints this stage order and the withhel
 | SECONDO execution and evaluation metrics | `nalplan/secondo_connector.py`, `nalplan/eval_metrics.py` | connector, benchmark loading, EM/VER/EX/EFF utilities |
 | Baseline adaptations | `nalplan/baselines.py` | DIN-SQL, DAIL-SQL, and OpenSearch-SQL runners |
 
-The four contribution files listed for Sections 5.2, 6, 7.1, and 7.2 contain public class/function signatures and documentation, but their executable bodies are withheld.
-
 ## Repository Layout
 
 ```text
